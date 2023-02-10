@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package recursividad;
 
-/**
- *
- * @author Bryan Quiros
- */
+
 public class PracticaB {
+    
+     public static int SumaRecursiva(int numero){
+        
+        int res;
+            
+        if (numero==1){
+            return 1;
+        }else{
+            res=numero+SumaRecursiva(numero-1);
+        }
+        return res;
+    }
     
 }
